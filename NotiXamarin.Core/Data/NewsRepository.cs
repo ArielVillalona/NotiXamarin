@@ -31,14 +31,14 @@ namespace NotiXamarin.Core.Data
 				{
 					Id=2,
 					Title="",
-					ImageName="noticia.jpg",
+					ImageName="noticia2.png",
 					Body=""
 				},
 				new News()
 				{
 					Id=3,
 					Title="",
-					ImageName="noticia.jpg",
+					ImageName="noticia3.png",
 					Body=""
 				},
 			};
