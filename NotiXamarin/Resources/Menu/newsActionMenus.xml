@@ -1,10 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <!--For all properties see: http://developer.android.com/guide/topics/resources/menu-resource.html-->
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-
+  
   <item android:id="@+id/action_read_later"
-        android:showAsAction="always"/>
-
+        android:showAsAction="always"
+        android:text="Read Later"
+  />
+  
 </menu>
 
 <!-- Code to implement into Activity:
@@ -12,7 +14,7 @@
 Android.Widget.SearchView searchView;
 public override bool OnCreateOptionsMenu(IMenu menu)
 {
-  this.MenuInflater.Inflate(Resource.Menu.NewsActionMenu, menu);
+  this.MenuInflater.Inflate(Resource.Menu.newsActionMenus, menu);
 
   var searchItem = menu.FindItem(Resource.Id.action_search);
 

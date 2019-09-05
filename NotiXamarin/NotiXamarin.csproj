@@ -116,9 +116,10 @@
     </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\Menu\NewsActionMenu.xml">
-      <SubType>Designer</SubType>
-    </Content>
+    <AndroidResource Include="Resources\Menu\newsActionMenus.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\read_later_white.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

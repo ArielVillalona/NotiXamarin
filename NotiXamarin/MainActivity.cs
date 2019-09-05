@@ -22,10 +22,7 @@ namespace NotiXamarin
 			SetContentView(Resource.Layout.activity_main);
 
 			/*Android.App.ActionBar actionBar = this.ActionBar;
-			actionBar.Title = "@string / app_name";
-			actionBar.Subtitle = "@string/app_name";
 			actionBar.SetDisplayHomeAsUpEnabled(true);*/
-
 
 			var id = Intent.Extras.GetInt(KEY_ID);
 			var newsService = new NewsService();
@@ -53,7 +50,7 @@ namespace NotiXamarin
 
 		public override bool OnCreateOptionsMenu(IMenu menu)
 		{
-			MenuInflater.Inflate(Resource.Menu.NewsActionMenu, menu);
+			MenuInflater.Inflate(Resource.Menu.newsActionMenus, menu);
 			return base.OnCreateOptionsMenu(menu);
 		}
 
